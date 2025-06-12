@@ -6,7 +6,7 @@ body {
   /* font-size: 16px; */
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 3rem;
+
 
 }
 
@@ -17,6 +17,7 @@ body {
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
+
   &--main{
     display: block;
     font-size: 6rem;
@@ -26,6 +27,12 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+  }
+
     
     
     /* animation-iteration-count: 3; */
@@ -53,6 +60,15 @@ body {
   letter-spacing: .2rem;
   transition: all .2s;
 
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
@@ -71,4 +87,4 @@ body {
   &:not(:last-child){
     margin-bottom: 3rem;
   }
-}
+} 
