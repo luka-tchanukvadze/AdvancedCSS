@@ -3,14 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         
-        <title>trillo &mdash; Your all-in-one booking app</title>
+        <title>nexter &mdash; your home, your freedom</title>
     </head>
     <body>
-        
+        <div class="container">
+            <header class="header">
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search hotels">
+                    <button>
+                       <img src="./img/mine.svg" alt="Mine Icon" width="24" height="24">
+                    </button>
+                </form>
+
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <img src="./img/mine.svg" alt="Mine Icon" width="24" height="24">
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                      <div class="user-nav__icon-box">
+                        <img src="./img/mine.svg" alt="Mine Icon" width="24" height="24">
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user-1.jpg" alt="random" class="user-nav__user-photo">
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">Navigation</nav>
+                <main class="hotel-view">Main</main>
+            </div>
+        </div>
     </body>
 </html>
